@@ -20,3 +20,8 @@ Criar pasta e abrir no vsCode
 - Iniciar cypress para configurar -> npx cypress open
 - criar aquivo de teste
 - criar cenário (estrutura do arquivo de teste).
+
+
+### Site ref. para teste.
+
+- https://restful-api.dev/
