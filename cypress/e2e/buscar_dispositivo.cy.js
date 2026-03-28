@@ -1,4 +1,4 @@
-describe('Buscar todos materiais', () => {
+describe('Funcionalidade para cadastro, busca, alteração e remoção de material', () => {
 
     it('Deve buscar dispositivo com sucesso', () => {
 
@@ -30,6 +30,37 @@ describe('Buscar todos materiais', () => {
             expect(resposta.status).to.equal(200)
             expect(resposta.body.name).to.equal('Meu Celular')
             expect(resposta.body.id).not.empty
-        })
+        }).wrap(id)
+        console.log(id)
     });
+
+    it('Deve alterar um dispositivo cadastrado', () => {
+        // todo
+        /*
+        https://api.restful-api.dev/objects/7
+
+                    {
+            "name": "Apple MacBook Pro 16",
+            "data": {
+                "year": 2019,
+                "price": 2049.99,
+                "CPU model": "Intel Core i9",
+                "Hard disk size": "1 TB",
+                "color": "silver"
+                }
+            }
+        */
+    });
+
+    it('Deve deletar o dispositivo cadatrado', () => {
+        // todo 
+        /*
+        https://api.restful-api.dev/objects/6
+
+            {
+            "message": "Object with id = 6, has been deleted."
+            }
+        */
+    });
+
 });
